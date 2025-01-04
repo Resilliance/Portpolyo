@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{.Title}}</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+	<script src="/static/js/script.js"></script>
+</head>
+<body>
+	<header>
+		<h1>My Resume</h1>
+	</header>
+	<nav class="navbar">
+		<a href="/">Home</a>
+		<a href="/projects">Projects</a>
+		<a href="/resume">Resume</a>
+	</nav>
+	<section>
+		<div>
+			<h2>Resume</h2>
+			<p>Here is my resume. You can <button onclick="copyToClipboard(window.location.href)">Share</button> or <button onclick="window.print()">Download as PDF</button>.</p>
+		</div>
+	</section>
+	<footer>
+		<p>Hey, nice to see you! Follow me on <a href="https://twitter.com">Twitter</a>.</p>
+	</footer>
+</body>
+</html>

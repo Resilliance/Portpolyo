@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{.Title}}</title>
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<h1 id="typing-text">Welcome to My Portfolio</h1>
+	</header>
+	<nav class="navbar">
+		<a href="/">Home</a>
+		<a href="/projects">Projects</a>
+		<a href="/resume">Resume</a>
+	</nav>
+	<section class="landing-section">
+		<div class="carousel" id="carousel">
+			<div class="carousel-slide active">
+				<h3>Project 1</h3>
+				<p>Description of Project 1</p>
+			</div>
+			<div class="carousel-slide">
+				<h3>Project 2</h3>
+				<p>Description of Project 2</p>
+			</div>
+			<div class="carousel-slide">
+				<h3>Project 3</h3>
+				<p>Description of Project 3</p>
+			</div>
+			<button class="carousel-btn" id="prevBtn">&#10094;</button>
+			<button class="carousel-btn" id="nextBtn">&#10095;</button>
+		</div>
+		<div class="about-me">
+			<h2>About Me</h2>
+			<p>Hi, I'm a software engineer. Check out my <a href="https://linkedin.com">LinkedIn</a> and <a href="https://github.com">GitHub</a>.</p>
+			<p>Current Position: Developer Extraordinaire</p>
+		</div>
+		<div class="buttons">
+			<button class="cta-btn" onclick="location.href='/projects'">View Projects</button>
+			<button class="cta-btn" onclick="location.href='/resume'">View Resume</button>
+		</div>
+	</section>
+	<footer class="footer">
+		<p>Hey, nice to see you! Follow me on <a href="https://twitter.com">Twitter</a>.</p>
+	</footer>
+	<script src="/static/js/script.js"></script>
+</body>
+</html>
