@@ -1,4 +1,4 @@
-### Portfolio (2025)
+# Portfolio (2025)
 ## What's different from the original?
 - This portfolio website is being deployed on a server that has an Intel Core Duo processor and 2GB of ram
 - Meaning, this application needs to be LIGHT and EFFICIENT
