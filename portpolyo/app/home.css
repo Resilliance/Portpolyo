@@ -1,0 +1,94 @@
+.hero-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #fffff0;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transform: rotate(-1deg);
+  transition: transform 0.15s ease-in-out;
+  background-image: linear-gradient(to bottom, #add8e6 1px, transparent 1px);
+  background-size: 100% 25px;
+  background-position: 0 40px;
+  background-repeat: repeat-y;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.hero-section:hover {
+  transform: scale(1.01) rotate(0deg);
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  opacity: 0.8;
+}
+
+.featured-projects-section {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #fffff0;
+  color: #333;
+  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transform: rotate(1deg);
+  transition: transform 0.15s ease-in-out;
+  background-image: linear-gradient(to bottom, #add8e6 1px, transparent 1px);
+  background-size: 100% 25px;
+  background-position: 0 40px;
+  background-repeat: repeat-y;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.featured-projects-section:hover {
+  transform: scale(1.01) rotate(0deg);
+}
+
+.featured-projects-section h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.projects-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+  min-height: 300px; /* Increased height to prevent cutoff */
+}
+
+.projects-carousel .project-note {
+  flex-shrink: 0;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  transition: transform 0.15s ease-in-out;
+  scroll-snap-align: start;
+}
+
+.projects-carousel .project-note:hover {
+  transform: scale(1.05) rotate(0deg) !important;
+}
+
+@media (max-width: 768px) {
+  .projects-carousel {
+    justify-content: flex-start;
+    padding: 0 20px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .projects-carousel .project-note {
+    width: 80vw; /* Make notes take up 80% of viewport width */
+    height: 80vw; /* Maintain aspect ratio */
+  }
+}

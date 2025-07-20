@@ -1,95 +1,87 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import Image from "next/image";
 import styles from "./page.module.css";
+import "./home.css";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>app/page.tsx</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  const [featuredProjects, setFeaturedProjects] = useState([
+    {
+      id: 1,
+      route: '/projects/mango',
+      title: 'MangoTree ERP',
+      description: "ERP idea where I can attach any apps/services to a central app. Full Modularity, tech stack agnostic, and potentially disruptive.",
+      style: {},
+    },
+    {
+      id: 2,
+      route: '/projects/peacewalk',
+      title: 'PeaceWalk',
+      description: 'My first iOS app and first published game! Pretty peaceful, I think.',
+      style: {},
+    },
+    {
+      id: 3,
+      route: '/projects/catchef',
+      title: 'CatChef',
+      description: 'My 2nd iOS app and first published game! Pretty peaceful, I think.',
+      style: {},
+    },
+  ]);
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+  useEffect(() => {
+    setFeaturedProjects(featuredProjects.map(note => ({
+      ...note,
+      style: {
+		marginTop: "10px",
+		padding: "10px",
+        transform: `rotate(${Math.random() * 10 - 5}deg)`,
+        backgroundColor: `hsl(${Math.random() * 360}, 70%, 80%)`,
+      },
+    })));
+  }, []);
+
+  return (
+    <main>
+      <section className="hero-section">
+        <h1>Welcome to My R&D Lab</h1>
+        <p>Exploring novel ideas and building innovative solutions.</p>
+      </section>
+
+      <section className="featured-projects-section">
+        <h2><strong>Featured Projects</strong></h2>
+        <div className="projects-carousel">
+          {featuredProjects.map(note => (
+            <Link href={note.route} key={note.id}>
+              <div className="project-note" style={note.style}>
+                <h3>{note.title}</h3>
+                <p>{note.description}</p>
+              </div>
+            </Link>
+          ))}
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <Link href="/about">
+        <section>
+          <h2>About Me</h2>
+          <p>Get to know the inner machinations of my mind.</p>
+        </section>
+      </Link>
+      <Link href="/projects">
+        <section>
+          <h2>All Projects</h2>
+          <p>Novel and border line nutty ideas.</p>
+        </section>
+      </Link>
+      <Link href="/contact">
+        <section>
+          <h2>Contact</h2>
+          <p>Not sure why you would, but you can send me an email</p>
+        </section>
+      </Link>
+    </main>
   );
 }

@@ -1,0 +1,53 @@
+.project-section {
+  background-color: #fffff0;
+  color: #333;
+  padding: 20px;
+  margin: 20px auto;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transform: rotate(-2deg);
+  transition: transform 0.15s ease-in-out;
+  background-image: linear-gradient(to bottom, #add8e6 1px, transparent 1px);
+  background-size: 100% 25px;
+  background-position: 0 40px;
+  background-repeat: repeat-y;
+  max-width: 800px;
+}
+
+.project-section:hover {
+  transform: scale(1.01) rotate(0deg);
+}
+
+.project-section h2 {
+  margin-bottom: 15px;
+  font-size: 1.8em;
+}
+
+.project-section p,
+.project-section ul {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.project-section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.project-section ul li {
+  margin-bottom: 5px;
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.image-gallery img {
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  max-width: 100%;
+  height: auto;
+}

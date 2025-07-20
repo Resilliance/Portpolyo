@@ -1,0 +1,106 @@
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.about-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bio,
+.bio-card {
+  background-color: #fffff0;
+  color: #333;
+  padding: 40px;
+  border-radius: 5px;
+  max-width: 600px;
+  z-index: 1;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transform: rotate(-1deg);
+  transition: transform 0.15s ease-in-out;
+  background-image: linear-gradient(to bottom, #add8e6 1px, transparent 1px);
+  background-size: 100% 25px; /* Adjust for line spacing */
+  background-position: 0 40px; /* Position blue lines below padding */
+  background-repeat: repeat-y;
+}
+
+.bio:hover,
+.bio-card:hover {
+  transform: scale(1.20) rotate(0deg);
+  z-index: 12
+}
+
+.philosophy-card {
+  position: absolute;
+  top: 100px;
+  left: -150px;
+  transform: rotate(5deg);
+  max-width: 300px;
+}
+
+.software-card {
+  position: absolute;
+  bottom: 100px;
+  right: -150px;
+  transform: rotate(-8deg);
+  max-width: 300px;
+}
+
+.fun-fact {
+  position: absolute;
+  padding: 20px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transition: transform 0.15s ease-in-out;
+  color: #333;
+  width: 200px;
+  height: 200px;
+  z-index: 2;
+}
+
+.fun-fact:hover {
+  transform: scale(1.1) rotate(0deg) !important;
+  z-index: 13;
+}
+
+.fun-fact-1 {
+  top: -200px;
+  left: -100px;
+}
+
+.fun-fact-2 {
+  top: -300px;
+  right: 200px;
+}
+
+.fun-fact-3 {
+  bottom: -250px;
+  left: 300px;
+}
+
+.fun-fact-4 {
+  bottom: -100px;
+  right: -100px;
+}
+
+.fun-fact-5 {
+  top: -400px;
+  right: 400px;
+}
+
+.fun-fact-6 {
+  bottom: -400px;
+  right: 400px;
+}
+
+.fun-fact-7 {
+  bottom: -350px;
+  right: -25px;
+}

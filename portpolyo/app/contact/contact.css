@@ -1,0 +1,111 @@
+.contact-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.contact-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-notecard {
+  background-color: #fffff0;
+  color: #333;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transition: transform 0.15s ease-in-out;
+  background-image: linear-gradient(to bottom, #add8e6 1px, transparent 1px);
+  background-size: 100% 25px;
+  background-position: 0 40px;
+  background-repeat: repeat-y;
+  max-width: 800px;
+  margin: 50px auto;
+  z-index: 1;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input[type="email"],
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.honeypot-field {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+button[type="submit"] {
+  background-color: #0d2242;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: 'Courier New', Courier, monospace;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #1a3a6a;
+}
+
+.contact-sticky-note {
+  position: absolute;
+  padding: 20px;
+  box-shadow: 5px 5px 7px rgba(0,0,0,0.3);
+  transition: transform 0.15s ease-in-out;
+  color: #333;
+  width: 150px;
+  height: 150px;
+  z-index: 2;
+}
+
+.contact-sticky-note:hover {
+  transform: scale(1.1) rotate(0deg) !important;
+  z-index: 3;
+}
+
+.contact-sticky-note-1 {
+  top: -100px;
+  left: -100px;
+}
+
+.contact-sticky-note-2 {
+  top: -50px;
+  right: -100px;
+}
+
+.contact-sticky-note-3 {
+  bottom: -75px;
+  left: -100px;
+}
