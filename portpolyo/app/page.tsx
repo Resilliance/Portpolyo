@@ -46,8 +46,8 @@ export default function Home() {
   return (
     <main>
       <section className="hero-section">
-        <h1>Welcome to My R&D Lab</h1>
-        <p>Exploring novel ideas and building innovative solutions.</p>
+        <h1>Welcome to Justin's R&D Lab</h1>
+        <p>Exploring novel ideas and building semi-innovative projects</p>
       </section>
 
       <section className="featured-projects-section">

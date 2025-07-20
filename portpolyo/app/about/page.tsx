@@ -32,10 +32,10 @@ export default function About() {
         <div className="bio">
           <h2>About Me</h2>
 		<p>
-			<strong>I’m a generalist at heart</strong> — a software engineer who enjoys learning new things and building across disciplines. I’ve worked on everything from modular backend systems to frontends that (hopefully) feel intuitive.
+			<strong>I&apos;m a generalist at heart</strong> — a software engineer who enjoys learning new things and building across disciplines. I’ve worked on everything from modular backend systems to frontends that (hopefully) feel intuitive.
 		</p>
 		<p>
-			<strong>Most of my ideas come from a mix of curiosity, creativity, and a tendency to dive deep when something grabs my interest.</strong> Whether it's game development, home-lab tinkering, or trying to make the perfect bowl of pasta, I enjoy figuring things out and seeing them come to life.
+			<strong>Most of my ideas come from a mix of curiosity, creativity, and a tendency to dive deep when something grabs my interest.</strong> Whether it@apos;s game development, home-lab tinkering, or trying to make the perfect bowl of pasta, I enjoy figuring things out and seeing them come to life.
 		</p>
 		<p>
 			<strong>I don’t have a singular focus, and I’m okay with that.</strong> I value process, iteration, and building things that feel meaningful — even if just to me.
@@ -45,20 +45,20 @@ export default function About() {
         <div className="bio-card philosophy-card">
           <h2>My Philosophy</h2>
 			<p>
-				<strong>I believe in building things that matter</strong> — not because they’re trendy or optimized, but because they reflect real thought and intention. I'm less concerned with perfection and more focused on progress, iteration, and momentum.
+				<strong>I believe in building things that matter</strong> — not because they’re trendy or optimized, but because they reflect real thought and intention. I@apos;m less concerned with perfection and more focused on progress, iteration, and momentum.
 			</p>
 			<p>
-				<strong>Usually the things that matter pique my curiosity and drive me mentally.</strong> Whether I'm learning a new framework, designing a system from scratch, or experimenting with music or food, I follow the thread wherever it leads — often to unexpected and fulfilling places.
+				<strong>Usually the things that matter pique my curiosity and drive me mentally.</strong> Whether I@apos;m learning a new framework, designing a system from scratch, or experimenting with music or food, I follow the thread wherever it leads — often to unexpected and fulfilling places.
 			</p>
         </div>
 
 		<div className="bio-card software-card">
 			<h2>What I Like About Building Software</h2>
 		  <p>
-			<strong>For me, software is a playground for experimentation and rapid prototyping.</strong> It lets me take my half-baked ideas, or just “what if?” thoughts and turn them into a product or system. I’m drawn to niche ideas and try to blitz it's development — it's the place in my mind where convention fades and curiosity takes over.
+			<strong>For me, software is a playground for experimentation and rapid prototyping.</strong> It lets me take my half-baked ideas, or just “what if?” thoughts and turn them into a product or system. I’m drawn to niche ideas and try to blitz it@apos;s development — it@apos;s the place in my mind where convention fades and curiosity takes over.
 		  </p>
 		  <p>
-			<strong>I enjoy combining tools and frameworks</strong> to hand craft software as if it's a sculpture and build things that maybe only I find useful — until they aren’t. 
+			<strong>I enjoy combining tools and frameworks</strong> to hand craft software as if it@apos;s a sculpture and build things that maybe only I find useful — until they aren’t. 
 		  </p>
         </div>
 
