@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <main>
       <section className="hero-section">
-        <h1>Welcome to Justin's R&D Lab</h1>
+        <h1>Welcome to Justin&apos;s R&D Lab</h1>
         <p>Exploring novel ideas and building semi-innovative projects</p>
       </section>
 
